@@ -1,0 +1,41 @@
+.navBarContainer {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    display: flex;
+    transition: all .5s;
+    background-color: white;
+
+    & > * {
+        display: flex;
+        align-items: center;
+        gap: 60px;
+    }
+
+    &__leftNavSection {
+        flex: 3;
+        justify-content: flex-end;
+        padding-right: 20px;
+    }
+
+    &__navIcon {
+        flex: 1;
+        justify-content: center;
+        background-image: url('../../../assets/imgs/logo.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: auto 50px;
+    }
+
+    &__rightNavSection {
+        padding-left: 20px;
+        flex: 3;
+        justify-content: flex-start;
+    }
+}
+
+.navItem {
+    width: auto;
+    height: auto;
+    font-family: Spartan;
+}

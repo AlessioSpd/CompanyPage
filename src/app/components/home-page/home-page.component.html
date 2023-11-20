@@ -1,0 +1,40 @@
+<div class="pageContainer">
+    <app-sticky-nav-bar></app-sticky-nav-bar>
+    <div class="pageContainer__imageHeader">Crea il tuo futuro con noi.</div>
+    <div class="pageContainer__historySnap">
+        <div class="pageContainer__historySnap__header">Allocca Group</div>
+        <div class="verticalSeparator" [ngStyle]="{'display': pageWidth < 930 ? 'none' : 'relative' }" ></div>
+        <div class="pageContainer__historySnap__textContainer">Fondata con la visione di trasformare aspirazioni in realtà, LuminaGroup è un faro nell'offrire soluzioni finanziarie, gestione sociale, consulenza e supporto alle start-up. Il nostro percorso inizia come una piccola squadra di menti creative, evolvendosi in un'entità che abbraccia l'innovazione finanziaria, la responsabilità sociale e l'incubazione imprenditoriale. Dal fornire prestiti finanziari alla consulenza strategica, il nostro impegno è guidato dalla creazione di valore duraturo. Oltre il successo individuale, ci impegniamo a coltivare comunità resilienti e imprese sostenibili, contribuendo a un futuro prospero e connesso attraverso integrità, creatività e dedizione senza riserve.</div>
+    </div>
+    <div class="pageContainer__offersContainer">
+        <div class="pageContainer__offersContainer__header">I motivi per scegliere Allocca Group, sono molteplici :</div>
+        <div class="pageContainer__offersContainer__offersPanel">
+            <div class="pageContainer__offersContainer__offersPanel__offersCard" *ngFor="let x of testCounter">
+                <div class="pageContainer__offersContainer__offersPanel__offersCard__icon"></div>
+                <div class="pageContainer__offersContainer__offersPanel__offersCard__labelContainer">{{x}}</div>
+            </div>
+        </div>
+    </div>
+    <div class="pageContainer__winCounter">
+        <div class="pageContainer__winCounter__bigHeader">Abbiamo l'abitudine di soddisfare ogni aspettativa</div>
+        <div class="horizontalSeparator-5"></div>
+        <div class="pageContainer__winCounter__smallHeader">Guidati dall'eccellenza finanziaria, abbiamo superato gli obiettivi, offrendo successo e fiducia ai nostri clienti con intelligenza e dedizione.</div>
+        <div class="horizontalSeparator"></div>
+        <div class="pageContainer__winCounter__countContainer">
+            <div class="pageContainer__winCounter__countContainer__counter">
+                <div class="pageContainer__winCounter__countContainer__counter--number-40">259</div>
+                <div class="pageContainer__winCounter__countContainer__counter--separator"></div>
+                <div class="pageContainer__winCounter__countContainer__counter--label">CONTRATTI</div>
+            </div><div class="pageContainer__winCounter__countContainer__counter">
+                <div class="pageContainer__winCounter__countContainer__counter--number-70">476</div>
+                <div class="pageContainer__winCounter__countContainer__counter--separator"></div>
+                <div class="pageContainer__winCounter__countContainer__counter--label">FINANZIAMENTI</div>
+            </div>
+            <div class="pageContainer__winCounter__countContainer__counter">
+                <div class="pageContainer__winCounter__countContainer__counter--number-40">300</div>
+                <div class="pageContainer__winCounter__countContainer__counter--separator"></div>
+                <div class="pageContainer__winCounter__countContainer__counter--label">dipendenti</div>
+            </div>
+        </div>
+    </div>
+</div>
